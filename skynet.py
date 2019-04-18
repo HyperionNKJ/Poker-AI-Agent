@@ -14,7 +14,16 @@ class Skynet(BasePokerPlayer):
 
     def declare_action(self, valid_actions, hole_card, round_state):
         # action = self.hMinimaxDecision(round_state, hole_card, valid_actions, DEPTH_LIMIT)
-        return self.getOptimalAction(hole_card, round_state['community_card'], valid_actions)
+        # return self.getOptimalAction(hole_card, round_state['community_card'], valid_actions)
+        win_rate = estimate_hole_card_win_rate(nb_simulation=1000, nb_player=2, hole_card=gen_cards(hole_card),
+                                               community_card=gen_cards(round_state['community_card']))
+        if win_rate >= 0.75:
+            action = valid_actions[2]
+        elif win_rate >= 0.40:
+            action = valid_actions[1]
+        else:
+            action = valid_actions[0]
+        return action["action"]
 
     def hMinimaxDecision(self, round_state, hole_card, valid_actions, depth_limit):
         emulator = Emulator()
