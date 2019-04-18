@@ -1,4 +1,7 @@
 import sys
+
+from skynet import Skynet
+
 sys.path.insert(0, './pypokerengine/api/')
 import game
 setup_config = game.setup_config
@@ -17,10 +20,25 @@ from randomplayer import RandomPlayer
 $ python testperf.py -n1 "Random Warrior 1" -a1 RandomPlayer -n2 "Random Warrior 2" -a2 RandomPlayer
 """
 
-def testperf(agent_name1, agent1, agent_name2, agent2):		
+def testperf(agent_name1, agent1, agent_name2, agent2):
+	max_payoff = - 1000
+	best_raise_prob = 1
+	for i in range(50):
+		raise_prob = (i + 50)/100
+		random_pot, skynet_pot = testperf1("random", RandomPlayer(), "skynet", Skynet(raise_prob, .4))
+		current_payoff = skynet_pot - random_pot
+		print("Raise_prob: " + str(raise_prob) + ", " + "Payoff: " + current_payoff)
+		if current_payoff > max_payoff:
+			max_payoff = current_payoff
+			best_raise_prob = raise_prob
+	print("================================================================")
+	print("Best raise_prob = " + str(best_raise_prob) + " with payoff = " + str(max_payoff))
+
+
+def testperf1(agent_name1, agent1, agent_name2, agent2):
 
 	# Init to play 500 games of 1000 rounds
-	num_game = 500
+	num_game = 10
 	max_round = 1000
 	initial_stack = 10000
 	smallblind_amount = 20
@@ -33,8 +51,8 @@ def testperf(agent_name1, agent1, agent_name2, agent2):
 	config = setup_config(max_round=max_round, initial_stack=initial_stack, small_blind_amount=smallblind_amount)
 	
 	# Register players
-	config.register_player(name=agent_name1, algorithm=RandomPlayer())
-	config.register_player(name=agent_name2, algorithm=RandomPlayer())
+	config.register_player(name=agent_name1, algorithm=agent1)
+	config.register_player(name=agent_name2, algorithm=agent2)
 	# config.register_player(name=agent_name1, algorithm=agent1())
 	# config.register_player(name=agent_name2, algorithm=agent2())
 	
@@ -51,6 +69,7 @@ def testperf(agent_name1, agent1, agent_name2, agent2):
 	print("\n " + agent_name1 + "'s final pot: ", agent1_pot)
 	print("\n " + agent_name2 + "'s final pot: ", agent2_pot)
 
+	return agent1_pot, agent2_pot
 	# print("\n ", game_result)
 	# print("\n Random player's final stack: ", game_result['players'][0]['stack'])
 	# print("\n " + agent_name + "'s final stack: ", game_result['players'][1]['stack'])

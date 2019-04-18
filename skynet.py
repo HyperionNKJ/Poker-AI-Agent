@@ -11,21 +11,28 @@ RAISE_PROB = 0.75
 CALL_PROB = 0.4
 
 class Skynet(BasePokerPlayer):
+    def __init__(self, raise_prob, call_prob):
+        super(BasePokerPlayer, self).__init__()
+        self.raise_prob = raise_prob
+        self.call_prob = call_prob
 
     def declare_action(self, valid_actions, hole_card, round_state):
         # action = self.hMinimaxDecision(round_state, hole_card, valid_actions, DEPTH_LIMIT)
         # return self.getOptimalAction(hole_card, round_state['community_card'], valid_actions)
+        if round_state['round_count'] == 3:
+            return valid_actions[1]  # call
+
         win_rate = estimate_hole_card_win_rate(nb_simulation=1000, nb_player=2, hole_card=gen_cards(hole_card),
                                                community_card=gen_cards(round_state['community_card']))
-        if win_rate >= 0.75:
+        if win_rate >= self.raise_prob:
             if len(valid_actions) == 3:
-                action = valid_actions[2]
+                action = valid_actions[2]  # raise
             else:
-                action = valid_actions[1]
-        elif win_rate >= 0.40:
-            action = valid_actions[1]
+                action = valid_actions[1]  # call
+        elif win_rate >= self.call_prob:
+            action = valid_actions[1]  # call
         else:
-            action = valid_actions[0]
+            action = valid_actions[0]  # fold
         return action["action"]
 
     def hMinimaxDecision(self, round_state, hole_card, valid_actions, depth_limit):
