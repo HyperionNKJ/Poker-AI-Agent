@@ -23,8 +23,8 @@ $ python testperf.py -n1 "Random Warrior 1" -a1 RandomPlayer -n2 "Random Warrior
 def testperf(agent_name1, agent1, agent_name2, agent2):
 	max_payoff = - 1000
 	best_raise_prob = 1
-	for i in range(50):
-		raise_prob = (i + 50)/100
+	for i in range(50, 100):
+		raise_prob = i/100
 		random_pot, skynet_pot = testperf1("random", RandomPlayer(), "skynet", Skynet(raise_prob, .4))
 		current_payoff = skynet_pot - random_pot
 		print("Raise_prob: " + str(raise_prob) + ", " + "Payoff: " + str(current_payoff))
