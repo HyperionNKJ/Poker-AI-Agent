@@ -1,6 +1,6 @@
 import sys
 
-from enum import Enum
+# from enum import Enum
 from pypokerengine.players import BasePokerPlayer
 from pypokerengine.api.emulator import Emulator
 from pypokerengine.utils.card_utils import estimate_hole_card_win_rate, gen_cards
@@ -10,12 +10,11 @@ DEPTH_LIMIT = 0
 RAISE_PROB = 0.75
 CALL_PROB = 0.4
 
-
 class Skynet(BasePokerPlayer):
 
     def declare_action(self, valid_actions, hole_card, round_state):
         # action = self.hMinimaxDecision(round_state, hole_card, valid_actions, DEPTH_LIMIT)
-        return self.getOptimalAction(hole_card, round_state["community_card"], valid_actions)
+        return self.getOptimalAction(hole_card, round_state['community_card'], valid_actions)
 
     def hMinimaxDecision(self, round_state, hole_card, valid_actions, depth_limit):
         emulator = Emulator()
@@ -92,30 +91,30 @@ def setup_ai():
     return Skynet()
 
 
-class handRank(Enum):
-    HIGH_CARD = 1
-    PAIR = 4
-    TWO_PAIR = 20
-    THREE_OF_A_KIND = 105
-    STRAIGHT = 355
-    FLUSH = 1070
-    FULL_HOUSE = 5300
-    FOUR_OF_A_KIND = 1.0
-    STRAIGHT_FLUSH = 1.0
-    ROYAL_FLUSH = 1.0
-
-
-class cardStrength(Enum):
-    ACE_VALUE = 14
-    KING_VALUE = 13
-    QUEEN_VALUE = 12
-    JACK_VALUE = 11
-    TEN_VALUE = 10
-    NINE_VALUE = 9
-    EIGHT_VALUE = 8
-    SEVEN_VALUE = 7
-    SIX_VALUE = 6
-    FIVE_VALUE = 5
-    FOUR_VALUE = 4
-    THREE_VALUE = 3
-    TWO_VALUE = 2
+# class handRank(Enum):
+#     HIGH_CARD = 1
+#     PAIR = 4
+#     TWO_PAIR = 20
+#     THREE_OF_A_KIND = 105
+#     STRAIGHT = 355
+#     FLUSH = 1070
+#     FULL_HOUSE = 5300
+#     FOUR_OF_A_KIND = 1.0
+#     STRAIGHT_FLUSH = 1.0
+#     ROYAL_FLUSH = 1.0
+#
+#
+# class cardStrength(Enum):
+#     ACE_VALUE = 14
+#     KING_VALUE = 13
+#     QUEEN_VALUE = 12
+#     JACK_VALUE = 11
+#     TEN_VALUE = 10
+#     NINE_VALUE = 9
+#     EIGHT_VALUE = 8
+#     SEVEN_VALUE = 7
+#     SIX_VALUE = 6
+#     FIVE_VALUE = 5
+#     FOUR_VALUE = 4
+#     THREE_VALUE = 3
+#     TWO_VALUE = 2
