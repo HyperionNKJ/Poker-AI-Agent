@@ -20,7 +20,7 @@ class Skynet(BasePokerPlayer):
         # action = self.hMinimaxDecision(round_state, hole_card, valid_actions, DEPTH_LIMIT)
         # return self.getOptimalAction(hole_card, round_state['community_card'], valid_actions)
         if round_state['round_count'] == 3:
-            return valid_actions[1]  # call
+            return valid_actions[1]["action"]  # call
 
         win_rate = estimate_hole_card_win_rate(nb_simulation=1000, nb_player=2, hole_card=gen_cards(hole_card),
                                                community_card=gen_cards(round_state['community_card']))
