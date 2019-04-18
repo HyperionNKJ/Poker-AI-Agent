@@ -18,34 +18,35 @@ class Skynet(BasePokerPlayer):
         return action
 
     def hMinimaxDecision(self, round_state, hole_card, valid_actions, depth_limit):
+        emulator = Emulator()
         maxUtility = -sys.maxsize - 1
         maxAction = valid_actions[0]["action"]  # assume first action to have the highest utility
         for a in valid_actions:
-            utility = self.hMinValue(Emulator.apply_action(Emulator(), round_state, a["action"], RAISE_AMOUNT)[0],
-                                     hole_card, 0, depth_limit, a["action"])
+            utility = self.hMinValue(emulator.apply_action(round_state, a["action"], RAISE_AMOUNT)[0],
+                                     hole_card, 0, depth_limit, a["action"], emulator)
             if utility > maxUtility:
                 maxUtility = utility
                 maxAction = a["action"]
         return maxAction
 
-    def hMinValue(self, round_state, hole_card, depth, limit, prevAction):
+    def hMinValue(self, round_state, hole_card, depth, limit, prevAction, emulator):
         if depth == limit:
             return self.evaluateHeuristic(hole_card, round_state['community_card'], prevAction)
         utility = sys.maxsize
-        for a in Emulator.generate_possible_actions(Emulator(), round_state):
+        for a in emulator.generate_possible_actions(round_state):
             utility = min(utility,
-                          self.hMaxValue(Emulator.apply_action(Emulator(), round_state, a["action"], RAISE_AMOUNT)[0],
-                                         hole_card, depth + 1, limit, prevAction))
+                          self.hMaxValue(emulator.apply_action(round_state, a["action"], RAISE_AMOUNT)[0],
+                                         hole_card, depth + 1, limit, prevAction, emulator))
         return utility
 
-    def hMaxValue(self, round_state, hole_card, depth, limit, prevAction):
+    def hMaxValue(self, round_state, hole_card, depth, limit, prevAction, emulator):
         if depth == limit:
             return self.evaluateHeuristic(hole_card, round_state['community_card'], prevAction)
         utility = -sys.maxsize - 1
-        for a in Emulator.generate_possible_actions(Emulator(), round_state):
+        for a in emulator.generate_possible_actions(round_state):
             utility = max(utility,
-                          self.hMinValue(Emulator.apply_action(Emulator(), round_state, a["action"], RAISE_AMOUNT)[0],
-                                         hole_card, depth + 1, limit, prevAction))
+                          self.hMinValue(emulator.apply_action(round_state, a["action"], RAISE_AMOUNT)[0],
+                                         hole_card, depth + 1, limit, prevAction, emulator))
         return utility
 
     def evaluateHeuristic(self, hole_card, community_card, prevAction):
