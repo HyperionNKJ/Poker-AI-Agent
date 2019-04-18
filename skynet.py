@@ -50,7 +50,7 @@ class Skynet(BasePokerPlayer):
         return utility
 
     def evaluateHeuristic(self, hole_card, community_card, prevAction):
-        win_rate = estimate_hole_card_win_rate(1000, 2, gen_cards(hole_card), gen_cards(community_card))
+        win_rate = estimate_hole_card_win_rate(1000, 2 , gen_cards(hole_card), gen_cards(community_card))
         if win_rate >= RAISE_PROB:
             targetAction = "raise"
         elif win_rate >= CALL_PROB:
@@ -63,7 +63,7 @@ class Skynet(BasePokerPlayer):
             return 0
 
     def receive_game_start_message(self, game_info):
-        pass
+        game_info['player_num'] = 2
 
     def receive_round_start_message(self, round_count, hole_card, seats):
         pass
