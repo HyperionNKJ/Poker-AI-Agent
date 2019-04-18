@@ -31,6 +31,7 @@ def testperf(agent_name1, agent1, agent_name2, agent2):
 		if current_payoff > max_payoff:
 			max_payoff = current_payoff
 			best_raise_prob = raise_prob
+		print("Current best raise_prob = " + str(best_raise_prob) + " with payoff = " + str(max_payoff))
 	print("================================================================")
 	print("Best raise_prob = " + str(best_raise_prob) + " with payoff = " + str(max_payoff))
 
@@ -39,7 +40,7 @@ def testperf1(agent_name1, agent1, agent_name2, agent2):
 
 	# Init to play 500 games of 1000 rounds
 	num_game = 10
-	max_round = 1
+	max_round = 10
 	initial_stack = 10000
 	smallblind_amount = 20
 
