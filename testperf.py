@@ -27,7 +27,7 @@ def testperf(agent_name1, agent1, agent_name2, agent2):
 		raise_prob = (i + 50)/100
 		random_pot, skynet_pot = testperf1("random", RandomPlayer(), "skynet", Skynet(raise_prob, .4))
 		current_payoff = skynet_pot - random_pot
-		print("Raise_prob: " + str(raise_prob) + ", " + "Payoff: " + current_payoff)
+		print("Raise_prob: " + str(raise_prob) + ", " + "Payoff: " + str(current_payoff))
 		if current_payoff > max_payoff:
 			max_payoff = current_payoff
 			best_raise_prob = raise_prob
@@ -39,7 +39,7 @@ def testperf1(agent_name1, agent1, agent_name2, agent2):
 
 	# Init to play 500 games of 1000 rounds
 	num_game = 10
-	max_round = 1000
+	max_round = 1
 	initial_stack = 10000
 	smallblind_amount = 20
 
