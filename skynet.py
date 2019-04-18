@@ -18,7 +18,10 @@ class Skynet(BasePokerPlayer):
         win_rate = estimate_hole_card_win_rate(nb_simulation=1000, nb_player=2, hole_card=gen_cards(hole_card),
                                                community_card=gen_cards(round_state['community_card']))
         if win_rate >= 0.75:
-            action = valid_actions[2]
+            if len(valid_actions) == 3:
+                action = valid_actions[2]
+            else:
+                action = valid_actions[1]
         elif win_rate >= 0.40:
             action = valid_actions[1]
         else:
