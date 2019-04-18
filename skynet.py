@@ -14,8 +14,8 @@ CALL_PROB = 0.4
 class Skynet(BasePokerPlayer):
 
     def declare_action(self, valid_actions, hole_card, round_state):
-        action = self.hMinimaxDecision(round_state, hole_card, valid_actions, DEPTH_LIMIT)
-        return action
+        # action = self.hMinimaxDecision(round_state, hole_card, valid_actions, DEPTH_LIMIT)
+        return self.getOptimalAction(hole_card, round_state["community_card"], valid_actions)
 
     def hMinimaxDecision(self, round_state, hole_card, valid_actions, depth_limit):
         emulator = Emulator()
@@ -61,6 +61,16 @@ class Skynet(BasePokerPlayer):
             return 1
         else:
             return 0
+
+    def getOptimalAction(self, hole_card, community_card, valid_actions):
+        win_rate = estimate_hole_card_win_rate(1000, 2, hole_card, community_card)
+        if win_rate >= 0.75:
+            action = valid_actions[2]
+        elif win_rate >= 0.40:
+            action = valid_actions[1]
+        else:
+            action = valid_actions[0]
+        return action["action"]
 
     def receive_game_start_message(self, game_info):
         game_info['player_num'] = 2
