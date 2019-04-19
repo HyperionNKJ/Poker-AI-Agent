@@ -1,0 +1,704 @@
+======================== Using raise probability of 0.5 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 93980
+Andrew Skynet's final pot: 106020
+Using raise_prob: 0.5, Payoff: 12040
+Current best raise_prob = 0.5 with payoff = 12040
+==================================================================================
+
+
+======================== Using raise probability of 0.51 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 98740
+Andrew Skynet's final pot: 101260
+Using raise_prob: 0.51, Payoff: 2520
+Current best raise_prob = 0.5 with payoff = 12040
+==================================================================================
+
+
+======================== Using raise probability of 0.52 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 92440
+Andrew Skynet's final pot: 107560
+Using raise_prob: 0.52, Payoff: 15120
+Current best raise_prob = 0.52 with payoff = 15120
+==================================================================================
+
+
+======================== Using raise probability of 0.53 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 93600
+Andrew Skynet's final pot: 106400
+Using raise_prob: 0.53, Payoff: 12800
+Current best raise_prob = 0.52 with payoff = 15120
+==================================================================================
+
+
+======================== Using raise probability of 0.54 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 95460
+Andrew Skynet's final pot: 104540
+Using raise_prob: 0.54, Payoff: 9080
+Current best raise_prob = 0.52 with payoff = 15120
+==================================================================================
+
+
+======================== Using raise probability of 0.55 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+[EXP]: Action TimedOut
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 89900
+Andrew Skynet's final pot: 110100
+Using raise_prob: 0.55, Payoff: 20200
+Current best raise_prob = 0.55 with payoff = 20200
+==================================================================================
+
+
+======================== Using raise probability of 0.56 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 94240
+Andrew Skynet's final pot: 105760
+Using raise_prob: 0.56, Payoff: 11520
+Current best raise_prob = 0.55 with payoff = 20200
+==================================================================================
+
+
+======================== Using raise probability of 0.57 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 97520
+Andrew Skynet's final pot: 102480
+Using raise_prob: 0.57, Payoff: 4960
+Current best raise_prob = 0.55 with payoff = 20200
+==================================================================================
+
+
+======================== Using raise probability of 0.58 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 91840
+Andrew Skynet's final pot: 108160
+Using raise_prob: 0.58, Payoff: 16320
+Current best raise_prob = 0.55 with payoff = 20200
+==================================================================================
+
+
+======================== Using raise probability of 0.59 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 84160
+Andrew Skynet's final pot: 115840
+Using raise_prob: 0.59, Payoff: 31680
+Current best raise_prob = 0.59 with payoff = 31680
+==================================================================================
+
+
+======================== Using raise probability of 0.6 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 92740
+Andrew Skynet's final pot: 107260
+Using raise_prob: 0.6, Payoff: 14520
+Current best raise_prob = 0.59 with payoff = 31680
+==================================================================================
+
+
+======================== Using raise probability of 0.61 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 90320
+Andrew Skynet's final pot: 109680
+Using raise_prob: 0.61, Payoff: 19360
+Current best raise_prob = 0.59 with payoff = 31680
+==================================================================================
+
+
+======================== Using raise probability of 0.62 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 87760
+Andrew Skynet's final pot: 112240
+Using raise_prob: 0.62, Payoff: 24480
+Current best raise_prob = 0.59 with payoff = 31680
+==================================================================================
+
+
+======================== Using raise probability of 0.63 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 90680
+Andrew Skynet's final pot: 109320
+Using raise_prob: 0.63, Payoff: 18640
+Current best raise_prob = 0.59 with payoff = 31680
+==================================================================================
+
+
+======================== Using raise probability of 0.64 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 89120
+Andrew Skynet's final pot: 110880
+Using raise_prob: 0.64, Payoff: 21760
+Current best raise_prob = 0.59 with payoff = 31680
+==================================================================================
+
+
+======================== Using raise probability of 0.65 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 95460
+Andrew Skynet's final pot: 104540
+Using raise_prob: 0.65, Payoff: 9080
+Current best raise_prob = 0.59 with payoff = 31680
+==================================================================================
+
+
+======================== Using raise probability of 0.66 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 92560
+Andrew Skynet's final pot: 107440
+Using raise_prob: 0.66, Payoff: 14880
+Current best raise_prob = 0.59 with payoff = 31680
+==================================================================================
+
+
+======================== Using raise probability of 0.67 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 92480
+Andrew Skynet's final pot: 107520
+Using raise_prob: 0.67, Payoff: 15040
+Current best raise_prob = 0.59 with payoff = 31680
+==================================================================================
+
+
+======================== Using raise probability of 0.68 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 93280
+Andrew Skynet's final pot: 106720
+Using raise_prob: 0.68, Payoff: 13440
+Current best raise_prob = 0.59 with payoff = 31680
+==================================================================================
+
+
+======================== Using raise probability of 0.69 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 94340
+Andrew Skynet's final pot: 105660
+Using raise_prob: 0.69, Payoff: 11320
+Current best raise_prob = 0.59 with payoff = 31680
+==================================================================================
+
+
+======================== Using raise probability of 0.7 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 90860
+Andrew Skynet's final pot: 109140
+Using raise_prob: 0.7, Payoff: 18280
+Current best raise_prob = 0.59 with payoff = 31680
+==================================================================================
+
+
+======================== Using raise probability of 0.71 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 83580
+Andrew Skynet's final pot: 116420
+Using raise_prob: 0.71, Payoff: 32840
+Current best raise_prob = 0.71 with payoff = 32840
+==================================================================================
+
+
+======================== Using raise probability of 0.72 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 93840
+Andrew Skynet's final pot: 106160
+Using raise_prob: 0.72, Payoff: 12320
+Current best raise_prob = 0.71 with payoff = 32840
+==================================================================================
+
+
+======================== Using raise probability of 0.73 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 92360
+Andrew Skynet's final pot: 107640
+Using raise_prob: 0.73, Payoff: 15280
+Current best raise_prob = 0.71 with payoff = 32840
+==================================================================================
+
+
+======================== Using raise probability of 0.74 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 87940
+Andrew Skynet's final pot: 112060
+Using raise_prob: 0.74, Payoff: 24120
+Current best raise_prob = 0.71 with payoff = 32840
+==================================================================================
+
+
+======================== Using raise probability of 0.75 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 96120
+Andrew Skynet's final pot: 103880
+Using raise_prob: 0.75, Payoff: 7760
+Current best raise_prob = 0.71 with payoff = 32840
+==================================================================================
+
+
+======================== Using raise probability of 0.76 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 92820
+Andrew Skynet's final pot: 107180
+Using raise_prob: 0.76, Payoff: 14360
+Current best raise_prob = 0.71 with payoff = 32840
+==================================================================================
+
+
+======================== Using raise probability of 0.77 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 91640
+Andrew Skynet's final pot: 108360
+Using raise_prob: 0.77, Payoff: 16720
+Current best raise_prob = 0.71 with payoff = 32840
+==================================================================================
+
+
+======================== Using raise probability of 0.78 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 91520
+Andrew Skynet's final pot: 108480
+Using raise_prob: 0.78, Payoff: 16960
+Current best raise_prob = 0.71 with payoff = 32840
+==================================================================================
+
+
+======================== Using raise probability of 0.79 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 100220
+Andrew Skynet's final pot: 99780
+Using raise_prob: 0.79, Payoff: -440
+Current best raise_prob = 0.71 with payoff = 32840
+==================================================================================
+
+
+======================== Using raise probability of 0.8 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 92860
+Andrew Skynet's final pot: 107140
+Using raise_prob: 0.8, Payoff: 14280
+Current best raise_prob = 0.71 with payoff = 32840
+==================================================================================
+
+
+======================== Using raise probability of 0.81 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 91740
+Andrew Skynet's final pot: 108260
+Using raise_prob: 0.81, Payoff: 16520
+Current best raise_prob = 0.71 with payoff = 32840
+==================================================================================
+
+
+======================== Using raise probability of 0.82 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 96240
+Andrew Skynet's final pot: 103760
+Using raise_prob: 0.82, Payoff: 7520
+Current best raise_prob = 0.71 with payoff = 32840
+==================================================================================
+
+
+======================== Using raise probability of 0.83 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 94760
+Andrew Skynet's final pot: 105240
+Using raise_prob: 0.83, Payoff: 10480
+Current best raise_prob = 0.71 with payoff = 32840
+==================================================================================
+
+
+======================== Using raise probability of 0.84 ==========================
+Game number: 1
+Game number: 2
+Game number: 3
+Game number: 4
+Game number: 5
+Game number: 6
+Game number: 7
+Game number: 8
+Game number: 9
+Game number: 10
+
+After playing 10 games of 20 rounds, the results are: 
+John WongRaiser's final pot: 100160
+Andrew Skynet's final pot: 99840
+Using raise_prob: 0.84, Payoff: -320
+Current best raise_prob = 0.71 with payoff = 32840
+==================================================================================
+
+
+Best raise_prob = 0.71 with payoff = 32840
+
+Time taken to play: 5837.0758 seconds
