@@ -28,14 +28,15 @@ class Skynet(BasePokerPlayer):
 
     def declare_action(self, valid_actions, hole_card, round_state):
         # return self.hMinimaxDecision(round_state, hole_card, valid_actions, DEPTH_LIMIT)
-        return self.getOptimalAction(hole_card, round_state, valid_actions)  # Use Monte Carlo algorithm to decide best action
+        return self.getOptimalAction(hole_card, round_state, valid_actions)  # Use Local Search to decide best action
 
-    # Our current evaluation strategy : Monte Carlo's Algorithm
+    # Our current evaluation strategy : Local Search with Heuristic using Monte Carlo's Algorithm
     def getOptimalAction(self, hole_card, round_state, valid_actions):
         # if we are at the river, then always call.
         if round_state['round_count'] == 3:
             return valid_actions[1]["action"]  # call
 
+        # Monte Carlo algorithm to evaluate hole card win rate
         win_rate = estimate_hole_card_win_rate(nb_simulation=1000, nb_player=2, hole_card=gen_cards(hole_card),
                                                    community_card=gen_cards(round_state['community_card']))
 
