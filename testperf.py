@@ -1,6 +1,6 @@
 import sys
 
-from skynet import Skynet
+from raise_player import RaisedPlayer
 
 sys.path.insert(0, './pypokerengine/api/')
 import game
@@ -12,7 +12,7 @@ from argparse import ArgumentParser
 
 """ =========== *Remember to import your agent!!! =========== """
 from randomplayer import RandomPlayer
-# from smartwarrior import SmartWarrior
+from skynet import Skynet
 """ ========================================================= """
 
 """ Example---To run testperf.py with random warrior AI against itself. 
@@ -20,18 +20,18 @@ from randomplayer import RandomPlayer
 $ python testperf.py -n1 "Random Warrior 1" -a1 RandomPlayer -n2 "Random Warrior 2" -a2 RandomPlayer
 """
 
-def testperf(agent_name1, agent1, agent_name2, agent2):
+def reinforcementLearning():
 	max_payoff = - 1000
 	best_raise_prob = 1
-	for i in range(50, 100):
-		raise_prob = i/100
-		random_pot, skynet_pot = testperf1("random", RandomPlayer(), "skynet", Skynet(raise_prob, .4))
+	for i in range(50, 85):
+		raise_prob = i/100.0
+		random_pot, skynet_pot = testperf1("John WongRaiser", RaisedPlayer(), "Andrew Skynet", Skynet(raise_prob, .4))
 		current_payoff = skynet_pot - random_pot
-		print("Raise_prob: " + str(raise_prob) + ", " + "Payoff: " + str(current_payoff))
+		print("Using raise_prob: " + str(raise_prob) + ", " + "Payoff: " + str(current_payoff))
 		if current_payoff > max_payoff:
 			max_payoff = current_payoff
 			best_raise_prob = raise_prob
-		print("Current best raise_prob = " + str(best_raise_prob) + " with payoff = " + str(max_payoff))
+		print("Current best raise_prob = " + str(best_raise_prob) + " with payoff = " + str(max_payoff) + "\n\n")
 	print("================================================================")
 	print("Best raise_prob = " + str(best_raise_prob) + " with payoff = " + str(max_payoff))
 
@@ -40,7 +40,7 @@ def testperf1(agent_name1, agent1, agent_name2, agent2):
 
 	# Init to play 500 games of 1000 rounds
 	num_game = 10
-	max_round = 10
+	max_round = 20
 	initial_stack = 10000
 	smallblind_amount = 20
 
@@ -60,15 +60,15 @@ def testperf1(agent_name1, agent1, agent_name2, agent2):
 
 	# Start playing num_game games
 	for game in range(1, num_game+1):
-		print("Game number: ", game)
+		print("Game number: " + str(game))
 		game_result = start_poker(config, verbose=0)
 		agent1_pot = agent1_pot + game_result['players'][0]['stack']
 		agent2_pot = agent2_pot + game_result['players'][1]['stack']
 
-	print("\n After playing {} games of {} rounds, the results are: ".format(num_game, max_round))
+	print("\nAfter playing {} games of {} rounds, the results are: ".format(num_game, max_round))
 	# print("\n Agent 1's final pot: ", agent1_pot)
-	print("\n " + agent_name1 + "'s final pot: ", agent1_pot)
-	print("\n " + agent_name2 + "'s final pot: ", agent2_pot)
+	print(agent_name1 + "'s final pot: " + str(agent1_pot))
+	print(agent_name2 + "'s final pot: " + str(agent2_pot))
 
 	return agent1_pot, agent2_pot
 	# print("\n ", game_result)

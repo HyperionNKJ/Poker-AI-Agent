@@ -10,7 +10,7 @@ config = setup_config(max_round=10, initial_stack=10000, small_blind_amount=10)
 
 
 config.register_player(name="random", algorithm=RandomPlayer())
-config.register_player(name="skynet", algorithm=Skynet())
+config.register_player(name="skynet", algorithm=Skynet(0.5, 0.4))
 
 
 game_result = start_poker(config, verbose=1)
