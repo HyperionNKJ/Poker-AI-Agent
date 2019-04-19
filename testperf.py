@@ -25,14 +25,15 @@ def reinforcementLearning(name1, agent1, name2, agent2):
 	best_raise_prob = 1
 	for i in range(50, 85):
 		raise_prob = i/100.0
+		print("======================== Using raise probability of " + str(raise_prob) + " ==========================")
 		random_pot, skynet_pot = testperf1("John WongRaiser", RaisedPlayer(), "Andrew Skynet", Skynet(raise_prob, .4))
 		current_payoff = skynet_pot - random_pot
 		print("Using raise_prob: " + str(raise_prob) + ", " + "Payoff: " + str(current_payoff))
 		if current_payoff > max_payoff:
 			max_payoff = current_payoff
 			best_raise_prob = raise_prob
-		print("Current best raise_prob = " + str(best_raise_prob) + " with payoff = " + str(max_payoff) + "\n\n")
-	print("================================================================")
+		print("Current best raise_prob = " + str(best_raise_prob) + " with payoff = " + str(max_payoff))
+		print("==================================================================================\n\n")
 	print("Best raise_prob = " + str(best_raise_prob) + " with payoff = " + str(max_payoff))
 
 
