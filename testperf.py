@@ -20,7 +20,7 @@ from skynet import Skynet
 $ python testperf.py -n1 "Random Warrior 1" -a1 RandomPlayer -n2 "Random Warrior 2" -a2 RandomPlayer
 """
 
-def reinforcementLearning():
+def reinforcementLearning(name1, agent1, name2, agent2):
 	max_payoff = - 1000
 	best_raise_prob = 1
 	for i in range(50, 85):
@@ -96,7 +96,7 @@ def parse_arguments():
 if __name__ == '__main__':
 	name1, agent1, name2, agent2 = parse_arguments()
 	start = time.time()
-	testperf(name1, agent1, name2, agent2)
+	reinforcementLearning(name1, agent1, name2, agent2)
 	end = time.time()
 
 	print("\n Time taken to play: %.4f seconds" %(end-start))
